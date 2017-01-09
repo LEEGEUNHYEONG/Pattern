@@ -1,6 +1,12 @@
-public class Main {
+import _1_Strategy.StrategyMain;
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+public class Main
+{
+
+    public static void main(String[] args)
+    {
+        StrategyMain strategyMain = new StrategyMain();
+
+
     }
 }
