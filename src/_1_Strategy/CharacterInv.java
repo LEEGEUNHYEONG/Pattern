@@ -1,6 +1,6 @@
 package _1_Strategy;
 
-import _1_Strategy.Item.Fist;
+import Util.log;
 import _1_Strategy.Item.Weapon;
 
 /**
@@ -15,12 +15,13 @@ public class CharacterInv
      */
     public CharacterInv()
     {
-        weapon = new Fist();
+
     }
 
     public void changeWeapon(Weapon weapon)
     {
-        System.out.println("\tchange weapon > " + weapon.getClass().getSimpleName());
+        //System.out.println("\tchange weapon > " + weapon.getClass().getSimpleName());
+        log.p("change Weapong", weapon.getClass().getSimpleName());
         this.weapon = weapon;
     }
 

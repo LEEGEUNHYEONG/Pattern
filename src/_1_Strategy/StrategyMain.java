@@ -1,6 +1,7 @@
 package _1_Strategy;
 
 import _1_Strategy.Item.Dagger;
+import _1_Strategy.Item.Fist;
 import _1_Strategy.Item.Sword;
 import _1_Strategy.Item.Wand;
 
@@ -14,6 +15,8 @@ public class StrategyMain
     public StrategyMain()
     {
         characterInv = new CharacterInv();
+
+        characterInv.changeWeapon(new Fist());
         characterInv.attack();
 
         characterInv.changeWeapon(new Dagger());
