@@ -1,7 +1,7 @@
 package _1_Strategy.Item;
 
 /**
- * Created by lkh25 on 2017-01-10.
+ * 공통되는 attack 기능을 Weapon 인터페이스에 정의
  */
 public interface Weapon
 {

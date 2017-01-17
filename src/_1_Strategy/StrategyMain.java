@@ -14,17 +14,22 @@ public class StrategyMain
 
     public StrategyMain()
     {
+        //  Weapon을 사용하기 위한 CharacterInv
         characterInv = new CharacterInv();
 
+        //  Fist를 설정
         characterInv.changeWeapon(new Fist());
         characterInv.attack();
 
+        //  Dagger를 설정
         characterInv.changeWeapon(new Dagger());
         characterInv.attack();
 
+        //  Sword를 설정
         characterInv.changeWeapon(new Sword());
         characterInv.attack();
 
+        //  Wand를 설정
         characterInv.changeWeapon(new Wand());
         characterInv.attack();
     }

@@ -1,8 +1,9 @@
 package _1_Strategy.Item;
 
 /**
- * Created by lkh25 on 2017-01-10.
+ * Fist 무기를 생성하고 Weapon 인터페이스의 attack 기능을 구현
  */
+
 public class Fist implements Weapon
 {
     @Override

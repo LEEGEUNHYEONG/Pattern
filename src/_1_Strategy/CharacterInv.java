@@ -4,27 +4,25 @@ import Util.log;
 import _1_Strategy.Item.Weapon;
 
 /**
- * Created by lkh25 on 2017-01-10.
+ *  Weapon을 사용할 수 있는 CharacterInv 클래스 구현
  */
 public class CharacterInv
 {
     private Weapon weapon;
 
     /**
-     *  초기 기본은 주먹으로 생성
+     *  어느 Weapon을 사용할지 설정함
+     * @param weapon
      */
-    public CharacterInv()
-    {
-
-    }
-
     public void changeWeapon(Weapon weapon)
     {
-        //System.out.println("\tchange weapon > " + weapon.getClass().getSimpleName());
-        log.p("change Weapong", weapon.getClass().getSimpleName());
+        System.out.println("change Weapon : " + weapon.getClass().getSimpleName());
         this.weapon = weapon;
     }
 
+    /**
+     *  설정된 weapon의 attack 기능을 수행 함
+     */
     public void attack()
     {
         weapon.attack();
