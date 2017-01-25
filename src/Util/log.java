@@ -9,4 +9,8 @@ public class log
     {
         System.out.println(tag + " : " + msg);
     }
+    public static void p(String msg)
+    {
+        System.out.println(msg);
+    }
 }
