@@ -13,4 +13,9 @@ public class log
     {
         System.out.println(msg);
     }
+
+    public static void p(int msg)
+    {
+        System.out.println(String.valueOf (msg));
+    }
 }
