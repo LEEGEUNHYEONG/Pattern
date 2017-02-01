@@ -1,5 +1,6 @@
 import _1_Strategy.StrategyMain;
 import _2_Observer.ObserverMain;
+import _3_Singleton.SingletonMain;
 
 public class Main
 {
@@ -7,7 +8,8 @@ public class Main
     public static void main(String[] args)
     {
         //StrategyMain strategyMain = new StrategyMain();
-        ObserverMain ovObserverMain = new ObserverMain ();
+        //ObserverMain ovObserverMain = new ObserverMain ();
+        SingletonMain singletonMain = new SingletonMain();
 
     }
 }
