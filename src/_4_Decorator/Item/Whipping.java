@@ -5,21 +5,22 @@ package _4_Decorator.Item;
  */
 
 /**
- *  Coffee 에 추가 가능한 Shot 클래스 ( 데코레이터 기능을 수행 )
- *  Shot 추가 시 1000원의 금액을 추가 함
+ *  Coffee 에 추가 가능한 Whipping 클래스 ( 데코레이터 기능을 수행 )
+ *  Whipping 추가 시 800원의 금액을 추가 함
  *  생성 시 전달 받은 ICoffee 의 가격에
  *  추가 금액을 더하는 기능을 수행 함
  */
-public class Shot implements ICoffee
+public class Whipping implements ICoffee
 {
     protected ICoffee ICoffee;
 
-    private int charge = 1000;
+    private int charge = 800;
 
-    public Shot (ICoffee ICoffee)
+    public Whipping (ICoffee ICoffee)
     {
+        super();
         this.ICoffee = ICoffee;
-        System.out.println ("샷 추가 + " + charge);
+        System.out.println ("휘핑 추가 + " + charge);
     }
 
     @Override
