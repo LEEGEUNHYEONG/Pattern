@@ -1,23 +1,27 @@
 package _5_AbstractFactory.Linux;
 
-import _5_AbstractFactory.Abs.Button;
-import _5_AbstractFactory.Abs.GuiFactory;
-import _5_AbstractFactory.Abs.TextArea;
+import _5_AbstractFactory.Interface.IButton;
+import _5_AbstractFactory.Interface.GuiFactory;
+import _5_AbstractFactory.Interface.ITextArea;
 
 /**
  * Created by LGH on 2017-02-10.
  */
+
+/**
+ *  GuiFactory 의 기능을 구현하는 LinuxGuiFactory
+ */
 public class LinuxGuiFactory implements GuiFactory
 {
     @Override
-    public Button createButton ()
+    public IButton createButton ()
     {
-        return new LinuxButton ();
+        return new LinuxIButton ();
     }
 
     @Override
-    public TextArea createTextArea ()
+    public ITextArea createTextArea ()
     {
-        return new LinuxTextArea ();
+        return new LinuxITextArea ();
     }
 }

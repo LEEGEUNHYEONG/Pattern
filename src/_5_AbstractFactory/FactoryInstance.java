@@ -1,6 +1,6 @@
 package _5_AbstractFactory;
 
-import _5_AbstractFactory.Abs.GuiFactory;
+import _5_AbstractFactory.Interface.GuiFactory;
 import _5_AbstractFactory.Linux.LinuxGuiFactory;
 import _5_AbstractFactory.Mac.MacGuiFactory;
 import _5_AbstractFactory.Window.WinGuiFactory;
