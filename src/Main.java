@@ -1,3 +1,5 @@
+import _6_Proxy.ProxyMain;
+
 public class Main
 {
 
@@ -10,6 +12,8 @@ public class Main
         //AbstractFactoryMain abstractFactoryMain = new AbstractFactoryMain ();
 
         //  Proxy
+        ProxyMain proxyMain = new ProxyMain ();
+
         //  Flyweight
 
 
