@@ -1,7 +1,5 @@
 package _6_Proxy;
 
-import Util.log;
-
 /**
  * Created by LGH on 2017-02-20.
  */
@@ -9,21 +7,14 @@ public class ProxyMain
 {
     public ProxyMain ()
     {
-        log.p (getClass ().getSimpleName (), "ProxyMain Start");
+        IResource iResource1 = new ProxyResource ("Test1");
+        IResource iResource2 = new ProxyResource ("Text2");
+        IResource iResource3 = new ProxyResource ("Text3");
 
-        IRequest iRequest1 = new ProxyRequest ("qwerasdfzxcv");
-        IRequest iRequest2 = new ProxyRequest ("asdfasdf");
-        IRequest iRequest3 = new ProxyRequest ("zxcvzxcv");
-        IRequest iRequest4 = new ProxyRequest ("12341234");
-        IRequest iRequest5 = new ProxyRequest ("4567890");
-
-        iRequest1.request ();
-        iRequest2.request ();
-        iRequest3.request ();
-        iRequest4.request ();
-        iRequest5.request ();
-
-
-
+        iResource1.requestDisplay ();
+        iResource2.requestDisplay ();
+        iResource1.requestDisplay ();
+        iResource3.requestDisplay ();
+        iResource2.requestDisplay ();
     }
 }
