@@ -1,4 +1,4 @@
-import _6_Proxy.ProxyMain;
+import _7_Flyweight.FlyweightMain;
 
 public class Main
 {
@@ -10,11 +10,8 @@ public class Main
         //SingletonMain singletonMain = new SingletonMain();
         //DecoratorMain decoratorMain = new DecoratorMain ();
         //AbstractFactoryMain abstractFactoryMain = new AbstractFactoryMain ();
-
-        //  Proxy
-        ProxyMain proxyMain = new ProxyMain ();
-
-        //  Flyweight
+        //ProxyMain proxyMain = new ProxyMain ();
+        FlyweightMain flyweightMain = new FlyweightMain ();
 
 
     }
