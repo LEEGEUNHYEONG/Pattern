@@ -1,25 +1,38 @@
-import _7_Flyweight.FlyweightMain;
+import _1_Creational._2_Builder.BuilderMain;
 
 public class Main
 {
 
     public static void main (String[] args)
     {
-        //StrategyMain strategyMain = new StrategyMain();
-        //ObserverMain ovObserverMain = new ObserverMain ();
-        //SingletonMain singletonMain = new SingletonMain();
-        //DecoratorMain decoratorMain = new DecoratorMain ();
+        /**     생성 패턴   */
         //AbstractFactoryMain abstractFactoryMain = new AbstractFactoryMain ();
-        //ProxyMain proxyMain = new ProxyMain ();
-        FlyweightMain flyweightMain = new FlyweightMain ();
+        //SingletonMain singletonMain = new SingletonMain();
+        BuilderMain builderMain = new BuilderMain ();
 
-/*
+
+        /**     구조 패턴   */
+        //DecoratorMain decoratorMain = new DecoratorMain ();
+        //FlyweightMain flyweightMain = new FlyweightMain ();
+        //ProxyMain proxyMain = new ProxyMain ();
+
+        /**     행동 패턴   */
+        //ObserverMain ovObserverMain = new ObserverMain ();
+        //StrategyMain strategyMain = new StrategyMain();
+
+
+        /*
         1. 생성 패턴 (Creational Pattern)
             Abstract Factory
-                객체의 집합을  직접 생성하는 것이 아니라 간접적으로 수행하기 위해서 사용
+                객체의 집합을 직접 생성하는 것이 아니라 간접적으로 수행하기 위해서 사용
                 생성 인터페이스만 나타내고 그 구현은 나타나지 않음
-                여러 객체의 집합 중 원하는 하나의 객체를 생성하고자 하는 경우에 사용 
+                여러 객체의 집합 중 원하는 하나의 객체를 생성하고자 하는 경우에 사용
+
             Builder
+                어떠한 데이터를 이용하여 객체를 생성하는 경우, 그 데이터들을 한꺼번에 입력하는 것이 아니라
+                그 값들에 맞게 차례대로 입력하여 객체를 생성하고자 하는 경우 사용
+                객체 생성 시 매개 변수가 많은 경우 사용
+                ex) StringBuilder
 
             Factory Method
 
