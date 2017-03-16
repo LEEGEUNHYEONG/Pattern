@@ -1,4 +1,5 @@
 import _1_Creational._2_Builder.BuilderMain;
+import _1_Creational._3_FactoryMethod.FactoryMethodMain;
 
 public class Main
 {
@@ -8,7 +9,8 @@ public class Main
         /**     생성 패턴   */
         //AbstractFactoryMain abstractFactoryMain = new AbstractFactoryMain ();
         //SingletonMain singletonMain = new SingletonMain();
-        BuilderMain builderMain = new BuilderMain ();
+        //BuilderMain builderMain = new BuilderMain ();
+        FactoryMethodMain factoryMethodMain = new FactoryMethodMain ();
 
 
         /**     구조 패턴   */
