@@ -48,6 +48,8 @@ public class Main
         /**                 구조 패턴 (Structural Pattern)    */
         /*
          * Adapter
+         * 호환성이 없는 인터페이스의 동작을 사용자가 원하는 다른 인터페이스의 동작으로 수행할 수 있도록
+         * 다른 인터페이스로 변환하는 패턴
          */
         AdapterMain adapterMain = new AdapterMain ();
 
