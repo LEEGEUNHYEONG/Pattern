@@ -2,6 +2,7 @@ import _1_Creational._2_Builder.BuilderMain;
 import _1_Creational._3_FactoryMethod.FactoryMethodMain;
 import _1_Creational._4_Prototype.PrototypeMain;
 import _2_Structural._1_Adapter.AdapterMain;
+import _2_Structural._2_Bridge.BridgeMain;
 
 public class Main
 {
@@ -51,11 +52,15 @@ public class Main
          * 호환성이 없는 인터페이스의 동작을 사용자가 원하는 다른 인터페이스의 동작으로 수행할 수 있도록
          * 다른 인터페이스로 변환하는 패턴
          */
-        AdapterMain adapterMain = new AdapterMain ();
+        //AdapterMain adapterMain = new AdapterMain ();
 
         /*
          *  Bridge
+         *  구현부에서 추상층을 분리하여 각자 독립적으로 변형 가능하게 한 패턴
+         *  기능과 구현을 분리해서 사용
          */
+        BridgeMain bridgeMain = new BridgeMain ();
+
 
         /*
          *  Composite
