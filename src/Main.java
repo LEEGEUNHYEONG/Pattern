@@ -3,6 +3,7 @@ import _1_Creational._3_FactoryMethod.FactoryMethodMain;
 import _1_Creational._4_Prototype.PrototypeMain;
 import _2_Structural._1_Adapter.AdapterMain;
 import _2_Structural._2_Bridge.BridgeMain;
+import _2_Structural._3_Composite.CompositeMain;
 
 public class Main
 {
@@ -59,12 +60,15 @@ public class Main
          *  구현부에서 추상층을 분리하여 각자 독립적으로 변형 가능하게 한 패턴
          *  기능과 구현을 분리해서 사용
          */
-        BridgeMain bridgeMain = new BridgeMain ();
+        //BridgeMain bridgeMain = new BridgeMain ();
 
 
         /*
          *  Composite
+         *  객체들의 관계를 트리 구조로 구성
+         *  개별 객체 또는 객체들의 잡합을 같은 방법으로 취급
          */
+        CompositeMain compositeMain = new CompositeMain ();
 
         /*
          *  Decorator
