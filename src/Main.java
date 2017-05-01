@@ -4,6 +4,7 @@ import _1_Creational._4_Prototype.PrototypeMain;
 import _2_Structural._1_Adapter.AdapterMain;
 import _2_Structural._2_Bridge.BridgeMain;
 import _2_Structural._3_Composite.CompositeMain;
+import _2_Structural._5_Facade.FacadeMain;
 
 public class Main
 {
@@ -68,7 +69,7 @@ public class Main
          *  객체들의 관계를 트리 구조로 구성
          *  개별 객체 또는 객체들의 잡합을 같은 방법으로 취급
          */
-        CompositeMain compositeMain = new CompositeMain ();
+        //CompositeMain compositeMain = new CompositeMain ();
 
         /*
          *  Decorator
@@ -80,7 +81,11 @@ public class Main
 
         /*
          *  Facade
+         *  서브 시스템에 대한 통합된 시스템을 제공하고,
+         *  이 통합된 시스템을 통해 서브 시스템에 대한 사용을 손쉽게 만들어 줌
+         *  서브 시스템에서의 수정 발생 시, Facade 의 수정을 통해 유연성을 높임
          */
+        FacadeMain facadeMain = new FacadeMain ();
 
         /*
          *  Flyweight
