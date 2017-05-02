@@ -5,6 +5,7 @@ import _2_Structural._1_Adapter.AdapterMain;
 import _2_Structural._2_Bridge.BridgeMain;
 import _2_Structural._3_Composite.CompositeMain;
 import _2_Structural._5_Facade.FacadeMain;
+import _3_Behavioral._1_ChainOfResponsibility.ChainOfResponsibilityMain;
 
 public class Main
 {
@@ -25,7 +26,6 @@ public class Main
          *  그 값들에 맞게 차례대로 입력하여 객체를 생성하고자 하는 경우 사용
          *  객체 생성 시 매개 변수가 많은 경우 사용 ex) StringBuilder   */
         //BuilderMain builderMain = new BuilderMain ();
-
 
         /*
          *  FactoryMethod
@@ -63,7 +63,6 @@ public class Main
          */
         //BridgeMain bridgeMain = new BridgeMain ();
 
-
         /*
          *  Composite
          *  객체들의 관계를 트리 구조로 구성
@@ -85,7 +84,7 @@ public class Main
          *  이 통합된 시스템을 통해 서브 시스템에 대한 사용을 손쉽게 만들어 줌
          *  서브 시스템에서의 수정 발생 시, Facade 의 수정을 통해 유연성을 높임
          */
-        FacadeMain facadeMain = new FacadeMain ();
+        //FacadeMain facadeMain = new FacadeMain ();
 
         /*
          *  Flyweight
@@ -102,8 +101,12 @@ public class Main
 
         /**                 행동 패턴 (Behavioral Pattern)     */
         /*
-         *  Chain of Responsibility
+         *  Chain of Responsibility ( 책임 연쇄 )
+         *  어떠한 연산을 처리할 수 있는 각각의 객체들이 체인과 같이 연결되어 있으며,
+         *  해당 객체가 특정 연산을 처리하지 못할 경우 다음 객체로 넘겨 연산을 처리할 수 있도록 하는 패턴
+         *  ex) 게임 내 아이템별 스탯에 따른 데미지 계산, Exception 등
          */
+        ChainOfResponsibilityMain chainOfResponsibilityMain = new ChainOfResponsibilityMain ();
 
         /*
          *  Command
