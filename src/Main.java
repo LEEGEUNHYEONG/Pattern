@@ -5,6 +5,7 @@ import _2_Structural._1_Adapter.AdapterMain;
 import _2_Structural._2_Bridge.BridgeMain;
 import _2_Structural._3_Composite.CompositeMain;
 import _2_Structural._5_Facade.FacadeMain;
+import _3_Behavioral.Command.CommandMain;
 import _3_Behavioral._1_ChainOfResponsibility.ChainOfResponsibilityMain;
 
 public class Main
@@ -106,11 +107,15 @@ public class Main
          *  해당 객체가 특정 연산을 처리하지 못할 경우 다음 객체로 넘겨 연산을 처리할 수 있도록 하는 패턴
          *  ex) 게임 내 아이템별 스탯에 따른 데미지 계산, Exception 등
          */
-        ChainOfResponsibilityMain chainOfResponsibilityMain = new ChainOfResponsibilityMain ();
+        //ChainOfResponsibilityMain chainOfResponsibilityMain = new ChainOfResponsibilityMain ();
 
         /*
          *  Command
+         *  요청을 객체의 형태로 캡슐화, 나중에 이용할 수 있도록 정보를 저장 또는 로깅, 취소 할 수 있게 해주는 패턴
+         *  명령 (Command), 수신자(Receiver), 발동자(Invoker)
+         *  ex) Undo, Redo 기능
          */
+        CommandMain commandMain = new CommandMain();
 
         /*
          *  Interpreter
