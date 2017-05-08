@@ -1,4 +1,4 @@
-package _3_Behavioral.Command;
+package _3_Behavioral._2_Command;
 
 /**
  * Created by LGH on 2017-05-03.

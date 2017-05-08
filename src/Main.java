@@ -1,12 +1,4 @@
-import _1_Creational._2_Builder.BuilderMain;
-import _1_Creational._3_FactoryMethod.FactoryMethodMain;
-import _1_Creational._4_Prototype.PrototypeMain;
-import _2_Structural._1_Adapter.AdapterMain;
-import _2_Structural._2_Bridge.BridgeMain;
-import _2_Structural._3_Composite.CompositeMain;
-import _2_Structural._5_Facade.FacadeMain;
-import _3_Behavioral.Command.CommandMain;
-import _3_Behavioral._1_ChainOfResponsibility.ChainOfResponsibilityMain;
+import _3_Behavioral._3_Interpreter.InterpreterMain;
 
 public class Main
 {
@@ -115,11 +107,13 @@ public class Main
          *  명령 (Command), 수신자(Receiver), 발동자(Invoker)
          *  ex) Undo, Redo 기능
          */
-        CommandMain commandMain = new CommandMain();
+        //CommandMain commandMain = new CommandMain();
 
         /*
          *  Interpreter
          */
+        InterpreterMain interpreterMain = new InterpreterMain();
+
 
         /*
          *  Iterator

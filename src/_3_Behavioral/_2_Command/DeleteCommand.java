@@ -1,4 +1,4 @@
-package _3_Behavioral.Command;
+package _3_Behavioral._2_Command;
 
 /**
  * Created by LGH on 2017-05-03.
@@ -6,9 +6,9 @@ package _3_Behavioral.Command;
 
 /**
  *  Concrete 클래스
- *  Create 관련한 execute 기능 구현
+ *  Delete 관련한 execute 기능 구현
  */
-public class CreateCommand implements Command
+public class DeleteCommand implements Command
 {
     private UnitManager unitManager;
     private String name;
@@ -16,13 +16,13 @@ public class CreateCommand implements Command
     private int y;
 
     /**
-     *  생성할 유닛의 기본 정보를 설정
+     *  삭제할 유닛의 기본 정보를 설정
      * @param unitManager
      * @param name
      * @param x
      * @param y
      */
-    public CreateCommand (UnitManager unitManager, String name, int x, int y)
+    public DeleteCommand (UnitManager unitManager, String name, int x, int y)
     {
         this.unitManager = unitManager;
         this.name = name;
@@ -31,12 +31,12 @@ public class CreateCommand implements Command
     }
 
     /**
-     *  UnitManager 에서 유닛을 생성 함
+     *  UnitManager 에서 유닛을 삭제 함
      */
     @Override
     public void execute ()
     {
-        unitManager.createUnit (name, x, y);
+        unitManager.deleteUnit (name, x, y);
     }
 
     @Override
@@ -57,3 +57,4 @@ public class CreateCommand implements Command
         return y;
     }
 }
+
