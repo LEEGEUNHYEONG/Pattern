@@ -111,6 +111,8 @@ public class Main
 
         /*
          *  Interpreter
+         *  문법 규칙을( 심볼 ) 클래스화하여 정의된 언어를 해석하기위해 사용하는 패턴
+         *  ex) sql 구문, 통신 프로토콜, Command 명령어 등
          */
         InterpreterMain interpreterMain = new InterpreterMain();
 
