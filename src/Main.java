@@ -1,4 +1,8 @@
+import java.util.HashMap;
+import java.util.Iterator;
+
 import _3_Behavioral._3_Interpreter.InterpreterMain;
+import _3_Behavioral._4_Iterator.IteratorMain;
 
 public class Main
 {
@@ -114,12 +118,15 @@ public class Main
          *  문법 규칙을( 심볼 ) 클래스화하여 정의된 언어를 해석하기위해 사용하는 패턴
          *  ex) sql 구문, 통신 프로토콜, Command 명령어 등
          */
-        InterpreterMain interpreterMain = new InterpreterMain();
-
+        //InterpreterMain interpreterMain = new InterpreterMain();
 
         /*
          *  Iterator
+         *  어떠한 목록을 순차적으로 탐색 하는데 사용하는 패턴
+         *  ex) 자바 Iterator 인터페이스
          */
+        IteratorMain iteratorMain = new IteratorMain ();
+
 
         /*
          *  Mediator
