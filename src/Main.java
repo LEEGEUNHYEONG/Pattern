@@ -3,6 +3,7 @@ import java.util.Iterator;
 
 import _3_Behavioral._3_Interpreter.InterpreterMain;
 import _3_Behavioral._4_Iterator.IteratorMain;
+import _3_Behavioral._5_Mediator.MediatorMain;
 
 public class Main
 {
@@ -125,12 +126,12 @@ public class Main
          *  어떠한 목록을 순차적으로 탐색 하는데 사용하는 패턴
          *  ex) 자바 Iterator 인터페이스
          */
-        IteratorMain iteratorMain = new IteratorMain ();
-
+        //IteratorMain iteratorMain = new IteratorMain ();
 
         /*
          *  Mediator
          */
+        MediatorMain mediatorMain = new MediatorMain ();
 
         /*
          *  Memento
