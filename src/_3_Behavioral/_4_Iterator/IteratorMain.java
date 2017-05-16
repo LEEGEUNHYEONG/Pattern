@@ -17,16 +17,16 @@ public class IteratorMain
         inventory.addItem (new Item("노트북"));
         inventory.addItem (new Item("카메라"));
 
-        //  Inventory 의 Iterator 를 가져 옴
-        Iterator iterator = inventory.iterator ();
+        //  Inventory 의 IIterator 를 가져 옴
+        IIterator IIterator = inventory.iterator ();
 
         Item item;
 
-        //  Iterator 에 다음 항목이 존재하는 경우
-        while(iterator.hasNext ())
+        //  IIterator 에 다음 항목이 존재하는 경우
+        while(IIterator.hasNext ())
         {
-            //  Iterator 를 통해 다음 항목을 가져 옴
-            item = (Item)iterator.next ();
+            //  IIterator 를 통해 다음 항목을 가져 옴
+            item = (Item) IIterator.next ();
             System.out.println(item.getName ());
         }
     }

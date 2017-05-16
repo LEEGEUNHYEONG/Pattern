@@ -5,9 +5,9 @@ package _3_Behavioral._4_Iterator;
  */
 
 /**
- *  Iterator 의 기능을 정의
+ *  IIterator 의 기능을 정의
  */
-public interface Iterator
+public interface IIterator
 {
     //  다음 항목이 존재하는지 여부를 return
     public boolean hasNext();

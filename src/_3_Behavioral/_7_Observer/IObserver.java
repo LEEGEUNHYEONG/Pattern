@@ -7,7 +7,7 @@ package _3_Behavioral._7_Observer;
 /**
  *  옵저버가 수행할 업데이트 기능에 대한 인터페이스 정의
  */
-public interface Observer
+public interface IObserver
 {
     /**
      *  update 동작 수행

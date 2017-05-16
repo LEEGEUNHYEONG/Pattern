@@ -5,10 +5,10 @@ package _3_Behavioral._4_Iterator;
  */
 
 /**
- *  Concrete Aggregate 클래스
- *  Aggregate 인터페이스의 Iterator 를 실제 구현 함
+ *  Concrete IAggregate 클래스
+ *  IAggregate 인터페이스의 IIterator 를 실제 구현 함
  */
-public class Inventory implements Aggregate
+public class Inventory implements IAggregate
 {
     //  Item 을 저장할 배열 선언
     private Item[] items;
@@ -53,12 +53,12 @@ public class Inventory implements Aggregate
     }
 
     /**
-     *  Items 배열을 탐색할 수 있는 Iterator 를 생성하여 return 함
+     *  Items 배열을 탐색할 수 있는 IIterator 를 생성하여 return 함
      * @return
      */
     @Override
-    public Iterator iterator ()
+    public IIterator iterator ()
     {
-        return new InventoryIterator (this);
+        return new InventoryIIterator (this);
     }
 }

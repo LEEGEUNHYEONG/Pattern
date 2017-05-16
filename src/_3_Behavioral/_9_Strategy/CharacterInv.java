@@ -1,22 +1,22 @@
 package _3_Behavioral._9_Strategy;
 
-import _3_Behavioral._9_Strategy.Item.Weapon;
+import _3_Behavioral._9_Strategy.Item.IWeapon;
 
 /**
  *  Weapon을 사용할 수 있는 CharacterInv 클래스 구현
  */
 public class CharacterInv
 {
-    private Weapon weapon;
+    private IWeapon IWeapon;
 
     /**
      *  어느 Weapon을 사용할지 설정함
-     * @param weapon
+     * @param IWeapon
      */
-    public void changeWeapon(Weapon weapon)
+    public void changeWeapon(IWeapon IWeapon)
     {
-        System.out.println("change Weapon : " + weapon.getClass().getSimpleName());
-        this.weapon = weapon;
+        System.out.println("change IWeapon : " + IWeapon.getClass().getSimpleName());
+        this.IWeapon = IWeapon;
     }
 
     /**
@@ -24,6 +24,6 @@ public class CharacterInv
      */
     public void attack()
     {
-        weapon.attack();
+        IWeapon.attack();
     }
 }

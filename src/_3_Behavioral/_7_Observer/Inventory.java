@@ -9,17 +9,17 @@ import Util.log;
  */
 
 /**
- *  Inventory 클래스로서 그 기능과 ObserverManager 의 기능을 구현 한다
+ *  Inventory 클래스로서 그 기능과 IObserverManager 의 기능을 구현 한다
  */
-public class Inventory implements ObserverManager
+public class Inventory implements IObserverManager
 {
     //  Inventory 클래스에서 등록되는 옵저버들을 관리하기 위한 리스트
-    private ArrayList<Observer> observerArrayList;
+    private ArrayList<IObserver> IObserverArrayList;
 
 
     public Inventory ()
     {
-        observerArrayList = new ArrayList<> ();
+        IObserverArrayList = new ArrayList<> ();
     }
 
     /**
@@ -27,9 +27,9 @@ public class Inventory implements ObserverManager
      * @param o 전달 받은 옵저버 객체
      */
     @Override
-    public void addObserver (Observer o)
+    public void addObserver (IObserver o)
     {
-        observerArrayList.add (o);
+        IObserverArrayList.add (o);
     }
 
     /**
@@ -37,9 +37,9 @@ public class Inventory implements ObserverManager
      * @param o 전달 받은 옵저버 객체
      */
     @Override
-    public void removeObserver (Observer o)
+    public void removeObserver (IObserver o)
     {
-        observerArrayList.remove (o);
+        IObserverArrayList.remove (o);
     }
 
     /**
@@ -48,7 +48,7 @@ public class Inventory implements ObserverManager
     @Override
     public void notifyObserver ()
     {
-        for(Observer o : observerArrayList)
+        for(IObserver o : IObserverArrayList)
         {
             o.update ("equip : " + getItem ()); //  현재 아이템 리스트를 요청
         }

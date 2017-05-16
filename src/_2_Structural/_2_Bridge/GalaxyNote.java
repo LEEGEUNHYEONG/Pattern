@@ -5,9 +5,9 @@ package _2_Structural._2_Bridge;
  */
 
 /**
- *  Device 의 기능을 수행할 수 있는 GalaxyNote 클래스
+ *  IDevice 의 기능을 수행할 수 있는 GalaxyNote 클래스
  */
-public class GalaxyNote implements Device
+public class GalaxyNote implements IDevice
 {
     @Override
     public void turnOn ()

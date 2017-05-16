@@ -8,9 +8,9 @@ import Util.log;
 
 /**
  *  Status 클래스로 그 기능과
- *  Observer 의 기능을 구현
+ *  IObserver 의 기능을 구현
  */
-public class Status implements Observer
+public class Status implements IObserver
 {
     private Inventory inventory;        //  생성 시 전달받을 인벤토리
 

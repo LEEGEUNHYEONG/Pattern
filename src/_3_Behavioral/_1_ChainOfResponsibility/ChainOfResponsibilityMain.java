@@ -18,9 +18,9 @@ public class ChainOfResponsibilityMain
         Armor armor3 = new Armor (15);
 
         //  Armor1 의 다음으로 Armor2 지정
-        armor1.setNextDefence (armor2);
+        armor1.setNextIDefence (armor2);
         //  Armor2 의 다음으로 Armor3 지정
-        armor2.setNextDefence (armor3);
+        armor2.setNextIDefence (armor3);
 
         //  초기 Attack 의 값
         System.out.println(attack.getAmount ());

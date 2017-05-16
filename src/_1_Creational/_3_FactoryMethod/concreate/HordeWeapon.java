@@ -10,6 +10,6 @@ public class HordeWeapon implements IWeapon
     @Override
     public void use()
     {
-        System.out.println("> Horde Weapon !!! ");
+        System.out.println("> Horde IWeapon !!! ");
     }
 }

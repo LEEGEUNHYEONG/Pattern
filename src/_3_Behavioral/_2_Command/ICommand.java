@@ -5,10 +5,10 @@ package _3_Behavioral._2_Command;
  */
 
 /**
- *  Command
+ *  ICommand
  *  execute 명령이 정의되어 있는 인터페이스
  */
-public interface Command
+public interface ICommand
 {
     public void execute();
 

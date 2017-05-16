@@ -8,7 +8,7 @@ package _3_Behavioral._2_Command;
  *  Concrete 클래스
  *  Delete 관련한 execute 기능 구현
  */
-public class DeleteCommand implements Command
+public class DeleteICommand implements ICommand
 {
     private UnitManager unitManager;
     private String name;
@@ -22,7 +22,7 @@ public class DeleteCommand implements Command
      * @param x
      * @param y
      */
-    public DeleteCommand (UnitManager unitManager, String name, int x, int y)
+    public DeleteICommand (UnitManager unitManager, String name, int x, int y)
     {
         this.unitManager = unitManager;
         this.name = name;

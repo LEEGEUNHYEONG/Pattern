@@ -1,7 +1,7 @@
-package _1_Creational._1_AbstractFactory.Window;
+package _1_Creational._1_AbstractFactory.Linux;
 
 import _1_Creational._1_AbstractFactory.Interface.IButton;
-import _1_Creational._1_AbstractFactory.Interface.GuiFactory;
+import _1_Creational._1_AbstractFactory.Interface.IGuiFactory;
 import _1_Creational._1_AbstractFactory.Interface.ITextArea;
 
 /**
@@ -9,20 +9,19 @@ import _1_Creational._1_AbstractFactory.Interface.ITextArea;
  */
 
 /**
- *  GuiFactory 의 기능을 구현하는 WinGuiFactory
+ *  IGuiFactory 의 기능을 구현하는 LinuxIGuiFactory
  */
-public class WinGuiFactory implements GuiFactory
-
+public class LinuxIGuiFactory implements IGuiFactory
 {
     @Override
     public IButton createButton ()
     {
-        return new WinIButton ();
+        return new LinuxIButton ();
     }
 
     @Override
     public ITextArea createTextArea ()
     {
-        return new WinITextArea ();
+        return new LinuxITextArea ();
     }
 }

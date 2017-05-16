@@ -5,9 +5,9 @@ package _2_Structural._2_Bridge;
  */
 
 /**
- *  Device 의 기본 기능을 정의한 인터페이스
+ *  IDevice 의 기본 기능을 정의한 인터페이스
  */
-public interface Device
+public interface IDevice
 {
     /**
      *  전원을 켬

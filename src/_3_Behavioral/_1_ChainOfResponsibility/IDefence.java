@@ -5,9 +5,9 @@ package _3_Behavioral._1_ChainOfResponsibility;
  */
 
 /**
- *  Defence 에 대한 정의 인터페이스
+ *  IDefence 에 대한 정의 인터페이스
  */
-public interface Defence
+public interface IDefence
 {
     public void defence(Attack attack);
 }

@@ -5,17 +5,17 @@ package _3_Behavioral._4_Iterator;
  */
 
 /**
- *  Concrete Iterator 클래스
- *  Iterator 의 정의된 기능을 구현 하는 클래스
+ *  Concrete IIterator 클래스
+ *  IIterator 의 정의된 기능을 구현 하는 클래스
  */
-public class InventoryIterator implements Iterator
+public class InventoryIIterator implements IIterator
 {
     private Inventory inventory;
     private int index = 0;
 
     private Item item;
 
-    public InventoryIterator (Inventory inventory)
+    public InventoryIIterator (Inventory inventory)
     {
         this.inventory = inventory;
     }

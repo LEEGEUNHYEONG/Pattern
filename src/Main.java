@@ -4,6 +4,7 @@ import java.util.Iterator;
 import _3_Behavioral._3_Interpreter.InterpreterMain;
 import _3_Behavioral._4_Iterator.IteratorMain;
 import _3_Behavioral._5_Mediator.MediatorMain;
+import _3_Behavioral._6_Memento.MementoMain;
 
 public class Main
 {
@@ -109,7 +110,7 @@ public class Main
         /*
          *  Command
          *  요청을 객체의 형태로 캡슐화, 나중에 이용할 수 있도록 정보를 저장 또는 로깅, 취소 할 수 있게 해주는 패턴
-         *  명령 (Command), 수신자(Receiver), 발동자(Invoker)
+         *  명령 (ICommand), 수신자(Receiver), 발동자(Invoker)
          *  ex) Undo, Redo 기능
          */
         //CommandMain commandMain = new CommandMain();
@@ -117,7 +118,7 @@ public class Main
         /*
          *  Interpreter
          *  문법 규칙을( 심볼 ) 클래스화하여 정의된 언어를 해석하기위해 사용하는 패턴
-         *  ex) sql 구문, 통신 프로토콜, Command 명령어 등
+         *  ex) sql 구문, 통신 프로토콜, ICommand 명령어 등
          */
         //InterpreterMain interpreterMain = new InterpreterMain();
 
@@ -130,12 +131,18 @@ public class Main
 
         /*
          *  Mediator
+         *  모든 클래스간 로직은 캡슐화 하고 하나의 중재자를 두어 문제를 처리하는 패턴
+         *  명령 전달을 위한 인터페이스가 존재하며, 모든 명령은 중재자에서 관리
+         *
+         *  Observer 와 다른 점으로 Observer 는 각 객체에 업데이트 이벤트를 발생시켜 로직을 처리하지만
+          * Mediator 는 Mediator 안에서 모든 로직을 처리 함
          */
-        MediatorMain mediatorMain = new MediatorMain ();
+        //MediatorMain mediatorMain = new MediatorMain ();
 
         /*
          *  Memento
          */
+        MementoMain mementoMain = new MementoMain ();
 
         /*
          *  Observer

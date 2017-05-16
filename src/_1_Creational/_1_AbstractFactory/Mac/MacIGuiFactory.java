@@ -1,7 +1,7 @@
 package _1_Creational._1_AbstractFactory.Mac;
 
 import _1_Creational._1_AbstractFactory.Interface.IButton;
-import _1_Creational._1_AbstractFactory.Interface.GuiFactory;
+import _1_Creational._1_AbstractFactory.Interface.IGuiFactory;
 import _1_Creational._1_AbstractFactory.Interface.ITextArea;
 
 /**
@@ -9,9 +9,9 @@ import _1_Creational._1_AbstractFactory.Interface.ITextArea;
  */
 
 /**
- *  GuiFactory 의 기능을 구현하는 MacGuiFactory
+ *  IGuiFactory 의 기능을 구현하는 MacIGuiFactory
  */
-public class MacGuiFactory implements GuiFactory
+public class MacIGuiFactory implements IGuiFactory
 {
     @Override
     public IButton createButton ()

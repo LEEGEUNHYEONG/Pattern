@@ -7,7 +7,7 @@ package _1_Creational._1_AbstractFactory.Interface;
 /**
  *  Button 과 TextArea 의 생성기능을 담당하는 Factory Interface
  */
-public interface GuiFactory
+public interface IGuiFactory
 {
     public IButton createButton();
     public ITextArea createTextArea();

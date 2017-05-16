@@ -10,8 +10,8 @@ package _2_Structural._2_Bridge;
  */
 public class Controller extends AbstController
 {
-    public Controller (Device device)
+    public Controller (IDevice IDevice)
     {
-        super (device);
+        super (IDevice);
     }
 }

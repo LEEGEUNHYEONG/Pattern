@@ -16,7 +16,7 @@ public class MapEditor
     private UnitManager unitManager = new UnitManager ();
 
     //  명령들을 리스트 관리
-    private List<Command> commandList = new ArrayList<> ();
+    private List<ICommand> ICommandList = new ArrayList<> ();
 
     private int position = 0;
 
@@ -28,10 +28,10 @@ public class MapEditor
      */
     public void create(String name, int x, int y)
     {
-        Command command = new CreateCommand(unitManager, name, x, y);
-        command.execute ();
+        ICommand ICommand = new CreateICommand (unitManager, name, x, y);
+        ICommand.execute ();
 
-        commandList.add (command);
+        ICommandList.add (ICommand);
         position++;
     }
 
@@ -43,10 +43,10 @@ public class MapEditor
      */
     public void delete(String name, int x, int y)
     {
-        Command command = new DeleteCommand (unitManager, name, x, y);
-        command.execute ();
+        ICommand ICommand = new DeleteICommand (unitManager, name, x, y);
+        ICommand.execute ();
 
-        commandList.add (command);
+        ICommandList.add (ICommand);
         position++;
     }
 
@@ -59,10 +59,10 @@ public class MapEditor
         System.out.println("----- Redo " + step + " -----");
         for(int i = 0; i < step; i++)
         {
-            if(position <= commandList.size () - 1)
+            if(position <= ICommandList.size () - 1)
             {
-                Command command = commandList.get (position++);
-                command.execute ();
+                ICommand ICommand = ICommandList.get (position++);
+                ICommand.execute ();
             }
         }
         System.out.println();
@@ -79,16 +79,16 @@ public class MapEditor
         {
             if(position > 0)
             {
-                Command command = commandList.get (--position);
+                ICommand ICommand = ICommandList.get (--position);
 
-                if(command.getClass ().equals (CreateCommand.class))
+                if(ICommand.getClass ().equals (CreateICommand.class))
                 {
-                    Command temp = new DeleteCommand(unitManager, command.getName (), command.getX (), command.getY ());
+                    ICommand temp = new DeleteICommand (unitManager, ICommand.getName (), ICommand.getX (), ICommand.getY ());
                     temp.execute ();
                 }
                 else
                 {
-                    Command temp = new CreateCommand (unitManager, command.getName (), command.getX (), command.getY ());
+                    ICommand temp = new CreateICommand (unitManager, ICommand.getName (), ICommand.getX (), ICommand.getY ());
                     temp.execute ();
                 }
             }

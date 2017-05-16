@@ -10,6 +10,6 @@ public class AllianceWeapon implements IWeapon
     @Override
     public void use()
     {
-        System.out.println("> Alliance Weapon !!! ");
+        System.out.println("> Alliance IWeapon !!! ");
     }
 }

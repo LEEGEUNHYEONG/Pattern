@@ -6,24 +6,24 @@ package _2_Structural._2_Bridge;
 
 /**
  *  Abstract 클래스
- *  Device 인터페이스의 정의 된 기능들을 구현
+ *  IDevice 인터페이스의 정의 된 기능들을 구현
  */
 public abstract class AbstController
 {
-    private Device device;
+    private IDevice IDevice;
 
-    public AbstController (Device device)
+    public AbstController (IDevice IDevice)
     {
-        this.device = device;
+        this.IDevice = IDevice;
     }
 
     public void turnOn()
     {
-        device.turnOn ();
+        IDevice.turnOn ();
     }
 
     public void turnOff()
     {
-        device.turnOff ();
+        IDevice.turnOff ();
     }
 }

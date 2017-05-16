@@ -5,9 +5,9 @@ package _2_Structural._2_Bridge;
  */
 
 /**
- *  Device 의 기능을 수행할 수 있는 GalaxyS 클래스
+ *  IDevice 의 기능을 수행할 수 있는 GalaxyS 클래스
  */
-public class GalaxyS implements Device
+public class GalaxyS implements IDevice
 {
     @Override
     public void turnOn ()
