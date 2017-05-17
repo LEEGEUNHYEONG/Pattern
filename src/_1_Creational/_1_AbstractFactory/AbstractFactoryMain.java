@@ -35,6 +35,7 @@ public class AbstractFactoryMain
         print();
         */
 
+        /*
         //  Linux 용 Gui Factory 를 생성
         IGuiFactory = new LinuxIGuiFactory ();
         print();
@@ -46,6 +47,7 @@ public class AbstractFactoryMain
         //  Window 용 Gui Factory 를 생성
         IGuiFactory = new WinIGuiFactory ();
         print();
+        */
     }
 
     private void print()

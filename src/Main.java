@@ -5,6 +5,7 @@ import _3_Behavioral._3_Interpreter.InterpreterMain;
 import _3_Behavioral._4_Iterator.IteratorMain;
 import _3_Behavioral._5_Mediator.MediatorMain;
 import _3_Behavioral._6_Memento.MementoMain;
+import _3_Behavioral._8_State.StateMain;
 
 public class Main
 {
@@ -110,8 +111,9 @@ public class Main
         /*
          *  Command
          *  요청을 객체의 형태로 캡슐화, 나중에 이용할 수 있도록 정보를 저장 또는 로깅, 취소 할 수 있게 해주는 패턴
-         *  명령 (ICommand), 수신자(Receiver), 발동자(Invoker)
+         *  명령 (Command), 수신자(Receiver), 발동자(Invoker), 클라이언트(Client)
          *  ex) Undo, Redo 기능
+         *  >>> Memento
          */
         //CommandMain commandMain = new CommandMain();
 
@@ -141,8 +143,12 @@ public class Main
 
         /*
          *  Memento
+         *  객체의 상태 정보를 저장하고 복원하는 역할을 수행할 수 있는 패턴
+         *  Originator, Caretaker, Memento
+         *  실행 취소
+         *  >>> Command
          */
-        MementoMain mementoMain = new MementoMain ();
+        //MementoMain mementoMain = new MementoMain ();
 
         /*
          *  Observer
@@ -154,6 +160,7 @@ public class Main
         /*
          *  State
          */
+        StateMain stateMain = new StateMain ();
 
         /*
          *  Strategy
