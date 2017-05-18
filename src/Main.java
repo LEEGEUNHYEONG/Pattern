@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import java.util.Iterator;
 
+import _3_Behavioral._10_Template.TemplateMain;
 import _3_Behavioral._3_Interpreter.InterpreterMain;
 import _3_Behavioral._4_Iterator.IteratorMain;
 import _3_Behavioral._5_Mediator.MediatorMain;
@@ -159,8 +160,11 @@ public class Main
 
         /*
          *  State
+         *  특정한 상태를 캡슐화 한 클래스로 표현 함,
+         *  이 클래스를 통해 객체의 상태를 변경할 수 있음
+         *
          */
-        StateMain stateMain = new StateMain ();
+        //StateMain stateMain = new StateMain ();
 
         /*
          *  Strategy
@@ -173,6 +177,7 @@ public class Main
         /*
          *  Template Method
          */
+        TemplateMain templateMain = new TemplateMain ();
 
         /*
          *  Visitor
