@@ -2,6 +2,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 import _3_Behavioral._10_Template.TemplateMain;
+import _3_Behavioral._11_Visitor.VisitorMain;
 import _3_Behavioral._3_Interpreter.InterpreterMain;
 import _3_Behavioral._4_Iterator.IteratorMain;
 import _3_Behavioral._5_Mediator.MediatorMain;
@@ -178,11 +179,13 @@ public class Main
          *  Template Method
          *  상위 클래스에서 처리를 제어하며, 하위 클래스에서는 내용을 구현
          */
-        TemplateMain templateMain = new TemplateMain ();
+        //TemplateMain templateMain = new TemplateMain ();
 
         /*
          *  Visitor
          */
+        VisitorMain visitorMain = new VisitorMain ();
+
 
     }
 }
