@@ -176,6 +176,7 @@ public class Main
 
         /*
          *  Template Method
+         *  상위 클래스에서 처리를 제어하며, 하위 클래스에서는 내용을 구현
          */
         TemplateMain templateMain = new TemplateMain ();
 
