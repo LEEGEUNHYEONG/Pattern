@@ -183,6 +183,10 @@ public class Main
 
         /*
          *  Visitor
+         *  객체 구조에서 기능을 분리하는 패턴
+         *  객체 구조를 돌아다니면서 처리
+         *  객체의 구조를 수정하지 않고 새로운 기능을 추가할 수 있음
+         *  ex) AnnotationValue, AnnotationValueVisitor
          */
         VisitorMain visitorMain = new VisitorMain ();
 
