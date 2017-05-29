@@ -11,7 +11,7 @@ public class BuilderMain
         Person p = new Person (null, 0, null, null, null);
         System.out.println(p.toString ());
 
-        //  개인 정보를 Builder 패턴을 이용하여 생성
+        //  PersonBuilder 를 이용하여 Person 객체를 생성
         Person person = new PersonBuilder ()
                 .setName ("Lee Geun Hyeong")
                 .setAge (29)

@@ -3,16 +3,18 @@ package _1_Creational._2_Builder;
 /**
  * Created by LGH on 2017-03-16.
  */
+
+/**
+ *  생성하고자 하는 객체
+ */
 public class Person
 {
-    enum Sex {MALE, FEMALE};
-
+    enum Sex {MALE, FEMALE}
     private String name;
     private int age;
     private Sex sex;
     private String tel;
     private String address;
-
 
     public Person (String name, int age, Sex sex, String tel, String address)
     {
