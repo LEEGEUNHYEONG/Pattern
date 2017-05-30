@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import java.util.Iterator;
 
+import _1_Creational._3_FactoryMethod.FactoryMethodMain;
 import _3_Behavioral._10_Template.TemplateMain;
 import _3_Behavioral._11_Visitor.VisitorMain;
 import _3_Behavioral._3_Interpreter.InterpreterMain;
@@ -34,7 +35,7 @@ public class Main
          *  객체 생성을 상위 클래스에서 하지 않고 하위 클래스에서 결정하여 생성 하는 방법
          *  클래스간의 결합도를 낮추고 효율적인 코드 제어를 위함
          */
-        //FactoryMethodMain factoryMethodMain = new FactoryMethodMain ();
+        FactoryMethodMain factoryMethodMain = new FactoryMethodMain ();
 
         /*
          * Singleton
@@ -188,7 +189,7 @@ public class Main
          *  객체의 구조를 수정하지 않고 새로운 기능을 추가할 수 있음
          *  ex) AnnotationValue, AnnotationValueVisitor
          */
-        VisitorMain visitorMain = new VisitorMain ();
+        //VisitorMain visitorMain = new VisitorMain ();
 
 
     }

@@ -1,7 +1,7 @@
-package _1_Creational._3_FactoryMethod.concreate;
+package _1_Creational._3_FactoryMethod.v1.concreate;
 
-import _1_Creational._3_FactoryMethod.framework.BlackSmith;
-import _1_Creational._3_FactoryMethod.framework.IWeapon;
+import _1_Creational._3_FactoryMethod.v1.framework.BlackSmith;
+import _1_Creational._3_FactoryMethod.v1.framework.IWeapon;
 
 /**
  * Created by LGH on 2017-03-16.
