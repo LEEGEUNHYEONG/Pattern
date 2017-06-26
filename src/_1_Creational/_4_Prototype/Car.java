@@ -31,7 +31,7 @@ public class Car implements Cloneable
 
     public Car copy () throws CloneNotSupportedException
     {
-        Car copyCar = (Car) this.clone ();
+        Car copyCar = (Car) super.clone ();
         return copyCar;
     }
 }

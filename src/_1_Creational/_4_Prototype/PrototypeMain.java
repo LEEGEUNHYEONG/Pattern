@@ -31,8 +31,43 @@ public class PrototypeMain
         Car racingCar = (Car)car.clone ();
         System.out.println("1 : " + racingCar.getName ());
 
-        racingCar.setName ("Second Car");
+        racingCar.setName ("Racing Car");
         System.out.println("2 : " + racingCar.getName () + " // " + car.getName ());
+
+        car = racingCar;
+        System.out.println("3 : " + racingCar.getName () + " // " + car.getName ());
+        car.setName ("Basic Car");
+        System.out.println("4 : " + racingCar.getName () + " // " + car.getName ());
+
+
+        /*
+        if(car.clone () != car)
+        {
+            System.out.println("1. true");
+        }
+        else
+        {
+            System.out.println("1. false");
+        }
+
+        if(car.clone ().getClass () == car.getClass ())
+        {
+            System.out.println("2. true");
+        }
+        else
+        {
+            System.out.println("2. false");
+        }
+
+        if(car.clone ().equals (car))
+        {
+            System.out.println("3. true");
+        }
+        else
+        {
+            System.out.println("3. false");
+        }
+        */
     }
 }
 
