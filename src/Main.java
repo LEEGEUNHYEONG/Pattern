@@ -1,6 +1,7 @@
 import java.util.HashMap;
 import java.util.Iterator;
 
+import _1_Creational._1_AbstractFactory.AbstractFactoryMain;
 import _1_Creational._3_FactoryMethod.FactoryMethodMain;
 import _3_Behavioral._10_Template.TemplateMain;
 import _3_Behavioral._11_Visitor.VisitorMain;
@@ -21,7 +22,7 @@ public class Main
          *  객체의 집합을 직접 생성하는 것이 아니라 간접적으로 수행하기 위해서 사용
          *  생성 인터페이스만 나타내고 그 구현은 나타나지 않음
          *  여러 객체의 집합 중 원하는 하나의 객체를 생성하고자 하는 경우에 사용 */
-        //AbstractFactoryMain abstractFactoryMain = new AbstractFactoryMain ();
+        AbstractFactoryMain abstractFactoryMain = new AbstractFactoryMain ();
 
         /*
          *  Builder
@@ -35,7 +36,7 @@ public class Main
          *  객체 생성을 상위 클래스에서 하지 않고 하위 클래스에서 결정하여 생성 하는 방법
          *  클래스간의 결합도를 낮추고 효율적인 코드 제어를 위함
          */
-        FactoryMethodMain factoryMethodMain = new FactoryMethodMain ();
+        //FactoryMethodMain factoryMethodMain = new FactoryMethodMain ();
 
         /*
          * Singleton

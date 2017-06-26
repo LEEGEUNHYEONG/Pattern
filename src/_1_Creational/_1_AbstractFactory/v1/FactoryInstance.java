@@ -1,9 +1,9 @@
-package _1_Creational._1_AbstractFactory;
+package _1_Creational._1_AbstractFactory.v1;
 
-import _1_Creational._1_AbstractFactory.Interface.IGuiFactory;
-import _1_Creational._1_AbstractFactory.Linux.LinuxIGuiFactory;
-import _1_Creational._1_AbstractFactory.Mac.MacIGuiFactory;
-import _1_Creational._1_AbstractFactory.Window.WinIGuiFactory;
+import _1_Creational._1_AbstractFactory.v1.Interface.IGuiFactory;
+import _1_Creational._1_AbstractFactory.v1.Linux.LinuxIGuiFactory;
+import _1_Creational._1_AbstractFactory.v1.Mac.MacIGuiFactory;
+import _1_Creational._1_AbstractFactory.v1.Window.WinIGuiFactory;
 
 /**
  * Created by LGH on 2017-02-10.

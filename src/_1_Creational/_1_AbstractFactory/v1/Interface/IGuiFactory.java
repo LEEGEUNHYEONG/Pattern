@@ -1,4 +1,4 @@
-package _1_Creational._1_AbstractFactory.Interface;
+package _1_Creational._1_AbstractFactory.v1.Interface;
 
 /**
  * Created by LGH on 2017-02-10.

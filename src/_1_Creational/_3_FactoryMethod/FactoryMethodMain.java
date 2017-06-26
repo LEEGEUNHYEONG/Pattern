@@ -7,6 +7,10 @@ import _1_Creational._3_FactoryMethod.v1.framework.IWeapon;
 import _1_Creational._3_FactoryMethod.v2.Circle;
 import _1_Creational._3_FactoryMethod.v2.Shape;
 import _1_Creational._3_FactoryMethod.v2.ShapeFactory;
+import _1_Creational._3_FactoryMethod.v3.Concrete.HpCreator;
+import _1_Creational._3_FactoryMethod.v3.Concrete.MpCreator;
+import _1_Creational._3_FactoryMethod.v3.framework.Item;
+import _1_Creational._3_FactoryMethod.v3.framework.ItemCreator;
 
 /**
  * Created by LGH on 2017-03-16.
@@ -30,6 +34,7 @@ public class FactoryMethodMain
         */
 
         //  v2
+        /*
         Shape shape;
         ShapeFactory shapeFactory = new ShapeFactory ();
 
@@ -41,5 +46,19 @@ public class FactoryMethodMain
 
         shape = shapeFactory.createShape (ShapeFactory.Rectangle);
         shape.draw ();
+        */
+
+        //  v3
+        ItemCreator itemCreator;
+        Item item;
+
+        itemCreator = new HpCreator ();
+        item = itemCreator.create ();
+        item.use ();
+
+        itemCreator = new MpCreator ();
+        item = itemCreator.create ();
+        item.use();
+
     }
 }
