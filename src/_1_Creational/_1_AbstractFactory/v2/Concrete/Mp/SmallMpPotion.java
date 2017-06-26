@@ -1,6 +1,6 @@
-package _1_Creational._1_AbstractFactory.v2.Framework.Concrete.Mp;
+package _1_Creational._1_AbstractFactory.v2.Concrete.Mp;
 
-import _1_Creational._1_AbstractFactory.v2.Framework.Abstract.MpPotion;
+import _1_Creational._1_AbstractFactory.v2.Abstract.MpPotion;
 
 /**
  * Created by LGH on 2017-06-26.

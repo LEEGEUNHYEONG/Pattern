@@ -1,6 +1,6 @@
-package _1_Creational._1_AbstractFactory.v2.Framework.Concrete.Hp;
+package _1_Creational._1_AbstractFactory.v2.Concrete.Hp;
 
-import _1_Creational._1_AbstractFactory.v2.Framework.Abstract.HpPotion;
+import _1_Creational._1_AbstractFactory.v2.Abstract.HpPotion;
 
 /**
  * Created by LGH on 2017-06-26.

@@ -3,11 +3,11 @@ package _1_Creational._1_AbstractFactory;
 import _1_Creational._1_AbstractFactory.v1.Interface.IButton;
 import _1_Creational._1_AbstractFactory.v1.Interface.IGuiFactory;
 import _1_Creational._1_AbstractFactory.v1.Interface.ITextArea;
-import _1_Creational._1_AbstractFactory.v2.Framework.Abstract.HpPotion;
-import _1_Creational._1_AbstractFactory.v2.Framework.Abstract.MpPotion;
-import _1_Creational._1_AbstractFactory.v2.Framework.Abstract.PotionFactory;
-import _1_Creational._1_AbstractFactory.v2.Framework.Concrete.Factory.LargePotionFactory;
-import _1_Creational._1_AbstractFactory.v2.Framework.Concrete.Factory.SmallPotionFactory;
+import _1_Creational._1_AbstractFactory.v2.Abstract.HpPotion;
+import _1_Creational._1_AbstractFactory.v2.Abstract.MpPotion;
+import _1_Creational._1_AbstractFactory.v2.Abstract.PotionFactory;
+import _1_Creational._1_AbstractFactory.v2.Concrete.Factory.LargePotionFactory;
+import _1_Creational._1_AbstractFactory.v2.Concrete.Factory.SmallPotionFactory;
 
 /**
  * Created by LGH on 2017-02-10.
