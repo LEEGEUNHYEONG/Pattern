@@ -1,15 +1,4 @@
-import java.util.HashMap;
-import java.util.Iterator;
-
-import _1_Creational._1_AbstractFactory.AbstractFactoryMain;
-import _1_Creational._3_FactoryMethod.FactoryMethodMain;
-import _3_Behavioral._10_Template.TemplateMain;
-import _3_Behavioral._11_Visitor.VisitorMain;
-import _3_Behavioral._3_Interpreter.InterpreterMain;
-import _3_Behavioral._4_Iterator.IteratorMain;
-import _3_Behavioral._5_Mediator.MediatorMain;
-import _3_Behavioral._6_Memento.MementoMain;
-import _3_Behavioral._8_State.StateMain;
+import _1_Creational._4_Prototype.PrototypeMain;
 
 public class Main
 {
@@ -22,7 +11,7 @@ public class Main
          *  객체의 집합을 직접 생성하는 것이 아니라 간접적으로 수행하기 위해서 사용
          *  생성 인터페이스만 나타내고 그 구현은 나타나지 않음
          *  여러 객체의 집합 중 원하는 하나의 객체를 생성하고자 하는 경우에 사용 */
-        AbstractFactoryMain abstractFactoryMain = new AbstractFactoryMain ();
+        //AbstractFactoryMain abstractFactoryMain = new AbstractFactoryMain ();
 
         /*
          *  Builder
@@ -49,7 +38,7 @@ public class Main
          *  Prototype
          *  객체를 복사하고자 할때 사용하며, 인스턴스는 자기자신을 새로운 객체에 복사할 수 있음
          */
-        //PrototypeMain prototypeMain = new PrototypeMain ();
+        PrototypeMain prototypeMain = new PrototypeMain ();
 
 
         /**                 구조 패턴 (Structural Pattern)    */

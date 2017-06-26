@@ -1,12 +1,5 @@
 package _1_Creational._3_FactoryMethod;
 
-import _1_Creational._3_FactoryMethod.v1.concreate.AllianceBlackSmith;
-import _1_Creational._3_FactoryMethod.v1.concreate.HordeBlackSmith;
-import _1_Creational._3_FactoryMethod.v1.framework.BlackSmith;
-import _1_Creational._3_FactoryMethod.v1.framework.IWeapon;
-import _1_Creational._3_FactoryMethod.v2.Circle;
-import _1_Creational._3_FactoryMethod.v2.Shape;
-import _1_Creational._3_FactoryMethod.v2.ShapeFactory;
 import _1_Creational._3_FactoryMethod.v3.Concrete.HpCreator;
 import _1_Creational._3_FactoryMethod.v3.Concrete.MpCreator;
 import _1_Creational._3_FactoryMethod.v3.framework.Item;
